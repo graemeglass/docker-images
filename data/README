@@ -1,3 +1,8 @@
 put your data here, or change the Vagrant/Docker config to point to
 the location of your data. it will be mounted as /data in papino
 virtual machine/container.
+
+NOTE: if you have a lot of data and use Docker, it is best to put the data
+      *outside* the papino root, otherwise it will be included in the docker
+      images which will be shipped to the docker daemon and it will take ages
+      before it starts.
