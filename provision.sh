@@ -16,6 +16,8 @@ sudo add-apt-repository ppa:ska-sa/main
 sudo apt-get update
 
 # install all python modules
+sudo rm -rf /tmp/pip_build_root/*  ## cleanup any failed builds
+sudo pip install astropy ## pip dependency management doesn't work properly
 sudo pip install -r /vagrant/conf/python_packages
 
 ###
